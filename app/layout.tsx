@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { QueryProviders } from "@/provider/query-provider";
 import { SheetProvider } from "@/provider/sheet-provider";
 import { Toaster } from "@/components/ui/sonner";
+import LoadingProvider from "./_context/LoadingProvider";
 
 const font = Poppins({
     subsets: ["latin"],
@@ -29,8 +30,8 @@ export default function RootLayout({
                 <body className={font.className}>
                     <QueryProviders>
                         <SheetProvider />
-                        <Toaster/>
-                        {children}
+                        <Toaster />
+                        <LoadingProvider>{children}</LoadingProvider>
                     </QueryProviders>
                 </body>
             </html>
