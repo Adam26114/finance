@@ -23,7 +23,7 @@ const routes = [
     },
     {
         href: "/categories",
-        label: "categories",
+        label: "Categories",
     },
     {
         href: "/settings",
@@ -66,7 +66,7 @@ export const Navigation = () => {
                                 }
                                 key={route.href}
                                 onClick={() => onClick(route.href)}
-                                className="w-full  justify-start"
+                                className="w-full  justify-start capitalize"
                             >
                                 {route.label}
                             </Button>

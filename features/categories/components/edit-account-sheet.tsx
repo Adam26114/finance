@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 import { CategoryForm } from "@/features/categories/components/category-form";
-import { useGetCategory } from "@/features/categories/api/use-get-categorie";
+import { useGetCategory } from "@/features/categories/api/use-get-category";
 import { useEditCategory } from "@/features/categories/api/use-edit-category";
 import { useOpenCategory } from "@/features/categories/hooks/uee-open-category";
 import { useDeleteCategory } from "@/features/categories/api/use-delete-category";

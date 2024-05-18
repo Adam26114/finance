@@ -15,11 +15,11 @@ import {
     FormMessage,
 } from "@/components/ui/form";
 
-const formSheme = insertCategorySchema.pick({
+const formShema = insertCategorySchema.pick({
     name: true,
 });
 
-type FormValues = z.input<typeof formSheme>;
+type FormValues = z.input<typeof formShema>;
 
 type Props = {
     id?: string;
@@ -37,7 +37,7 @@ export const CategoryForm = ({
     disabled,
 }: Props) => {
     const form = useForm<FormValues>({
-        resolver: zodResolver(formSheme),
+        resolver: zodResolver(formShema),
         defaultValues: defaultValues,
     });
 
