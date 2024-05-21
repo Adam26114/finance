@@ -7,12 +7,13 @@ import {
     TableCaption,
     TableRow,
 } from "@/components/ui/table";
+import { TableHeadSelect } from "./table-head-select";
 
 type Props = {
     headers: string[];
     body: string[][];
     selectedColumns: Record<string, string | null>;
-    omTableHeaderSelectChange: (
+    onTableHeadSelectChange: (
         columnIndex: number,
         value: string | null
     ) => void;
@@ -22,7 +23,7 @@ export const ImportTable = ({
     headers,
     body,
     selectedColumns,
-    omTableHeaderSelectChange,
+    onTableHeadSelectChange,
 }: Props) => {
     return (
         <div className=" rounded-md border overflow-hidden">
@@ -30,7 +31,13 @@ export const ImportTable = ({
                 <TableHeader className=" bg-muted">
                     <TableRow>
                         {headers.map((_item, index) => (
-                            <TableHead key={index}>{index}</TableHead>
+                            <TableHead key={index}>
+                                <TableHeadSelect
+                                    columnIndex={index}
+                                    selectedColumns={selectedColumns}
+                                    onChange={onTableHeadSelectChange}
+                                />
+                            </TableHead>
                         ))}
                     </TableRow>
                 </TableHeader>

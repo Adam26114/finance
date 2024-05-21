@@ -1,0 +1,523 @@
+:root {
+    --accent-color: #e4a43e;
+    --link-color: #e4a43e;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* LINK */
+a:visited {
+    color: #e4a43e;
+}
+/* LINK */
+
+/* HEADER BANNER */
+.front-page-header:after,
+.front-page-header .front-page-slider[data-fade="1"] .slide-image::before {
+    background: #152238;
+}
+
+.slide-header .title,
+.slide-header .description {
+    color: #fff;
+}
+
+body.page-has-thumbnail .page-header-wrapper {
+    min-height: 61.8vh;
+}
+
+/* Google Recaptcha */
+.grecaptcha-badge { 
+	visibility: hidden;
+}
+
+@media (min-width: 992px) {
+    body.page-has-thumbnail .page-header-wrapper {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    h2 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 767px) {
+    .front-page-header .front-page-slider {
+        min-height: 600px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 374px) {
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .front-page-header .front-page-slider {
+        min-height: 600px;
+    }
+}
+
+/* HEADER BANNER */
+
+/* ADJUST LOGO SIZE */
+.custom-logo {
+    max-height: 50px;
+    width: auto;
+}
+
+.site-title {
+    font-size: 30px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .title-wrapper {
+        display: none;
+    }
+}
+/* ADJUST LOGO SIZE */
+
+/* CHANGE HEADER TOGGLE BEHAVIOUR */
+.site-header .header-dropdown-toggle:focus,
+.site-header .header-dropdown-toggle:hover {
+    background-color: var(--accent-color);
+}
+
+.site-header .header-dropdown-toggle.toggled-on:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.site-header .header-dropdown-toggle.toggled-on {
+    border-color: transparent;
+}
+
+.site-header .header-dropdown-toggle.toggled-on:focus,
+.site-header .header-dropdown-toggle.toggled-on:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+/* CHANGE HEADER TOGGLE BEHAVIOUR */
+
+/* HOME PAGE BOOKING FORM */
+@media (min-width: 768px) {
+    .front-page-sidebar-wrapper .qikres-booking-form-widget {
+        padding: 0;
+    }
+
+    .front-page-sidebar-wrapper
+        .qikres-booking-form-widget
+        .ui.grid
+        > .column:not(.row) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .front-page-sidebar-wrapper .qikres-booking-form-widget {
+        padding: 0 0 0 40px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .front-page-sidebar-wrapper .qikres-booking-form-widget {
+        padding: 40px 20px;
+    }
+
+    .front-page-sidebar-wrapper
+        .qikres-booking-form-widget
+        .ui.stackable.grid
+        > .column:not(.row) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .front-page-sidebar-wrapper
+        .qikres-booking-form-widget
+        .ui.stackable.grid
+        > .column:not(.row):not(.ui.button) {
+        padding-top: 0;
+    }
+}
+/* HOME PAGE BOOKING FORM */
+
+/* BUTTON */
+button {
+    color: #fff;
+}
+/* BUTTON */
+
+/* JQUERY UI */
+.ui-widget {
+    font-family: inherit;
+}
+
+.ui-widget-header {
+    font-weight: 600;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #292c35;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    background: #e4a43e;
+    color: #292c35;
+    border: 1px solid #e4a43e;
+}
+
+.ui-datepicker td a.ui-state-hover:not(.ui-state-highlight),
+.ui-datepicker td a:not(.ui-state-highlight):hover {
+    color: #292c35;
+}
+/* JQUERY UI */
+
+/* JQUERY DATEPICKER */
+.ui-datepicker-header {
+    background: #292c35;
+    color: #fff;
+}
+
+.ui-datepicker-header .ui-icon {
+    background-image: url("http://ubicompsystem.no-ip.org:88/site/strand/wp-content/themes/j8hotel/resources/styles/jquery/images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+    background: none;
+}
+
+.ui-datepicker table {
+    border: none;
+}
+
+.ui-datepicker th {
+    font-weight: 600;
+}
+
+.ui-datepicker td a {
+    color: #292c35;
+}
+
+.ui-datepicker td a.ui-state-hover:not(.ui-state-highlight),
+.ui-datepicker td a:not(.ui-state-highlight):hover {
+    color: #e4a43e;
+}
+/* JQUERY DATEPICKER */
+
+/* ALBATROSS BUTTON SIZE VARIATION */
+.small.albatross-button {
+    font-size: 14px;
+    padding-left: 50px;
+    font-weight: 500;
+}
+
+.small.albatross-button:hover {
+    padding-left: 60px;
+}
+
+.small.albatross-button::before {
+    width: 32px;
+    height: 32px;
+    top: 11px;
+}
+
+.small.albatross-button svg {
+    width: 42px;
+    left: -21px;
+}
+/* ALBATROSS BUTTON SIZE VARIATION */
+
+/* ARCHITECTURAL HERITAGE AWARDS */
+figure.architectural-heritage-awards {
+    margin: 0;
+}
+/* ARCHITECTURAL HERITAGE AWARDS */
+
+/* HEADER MENU ITEM */
+.primary-menu-more a,
+.header-menu-container a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/* HEADER MENU ITEM */
+
+/* FOOTER */
+.footer-widgets > *:first-child:not(last-child) {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 2 auto;
+    flex: 1 2 auto;
+}
+
+.footer-widgets > *:last-child:not(first-child) {
+    -webkit-box-flex: 2;
+    -ms-flex: 1 1 33%;
+    flex: 1 1 33%;
+}
+
+.footer-widgets p {
+    line-height: 1.8;
+}
+
+.site-footer {
+    background-color: #152238;
+}
+
+.site-footer .site-info {
+    font-size: 13px;
+    margin-top: 2em;
+}
+
+.wp-block-group .wp-block-group__inner-container .margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.wp-block-group .wp-block-group__inner-container .margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.wp-block-group .wp-block-group__inner-container .margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+#media_image-1 img {
+    width: 150px;
+}
+
+#term-and-conditions:hover,
+#privacy-policy:hover {
+    color: #fff !important;
+    opacity: 1;
+}
+
+#footer-copyright{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+    .site-footer {
+        font-size: 14px;
+    }
+
+    .footer-widgets > .widget-area {
+        margin-bottom: 2em;
+    }
+
+    .footer-widgets > .widget-area > .widget:last-child {
+        margin-bottom: 0;
+    }
+}
+/* FOOTER */
+
+/* SIDEBAR BOOKING FORM */
+.sidebar-booking-form.ubicomp-form--widget-container {
+    display: block;
+}
+
+.sidebar-booking-form button {
+    width: 100%;
+}
+
+.sidebar-booking-form input:focus {
+    outline: none;
+}
+
+.sidebar-booking-form select {
+    width: 100%;
+    border-radius: 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.sidebar-booking-form select:focus {
+    border-radius: 1px;
+    outline: none;
+}
+
+.sidebar-booking-form .ubicomp-form--widget-container .ubicomp--booking-field,
+.sidebar-booking-form
+    .ubicomp-form--widget-container
+    .ubicomp--booking-field.checkout
+    .night,
+.sidebar-booking-form
+    .ubicomp-form--widget-container
+    .ubicomp--booking-field.checkout
+    .out,
+.sidebar-booking-form
+    .ubicomp-form--widget-container
+    .ubicomp--booking-field.person
+    .adult,
+.sidebar-booking-form
+    .ubicomp-form--widget-container
+    .ubicomp--booking-field.person
+    .child {
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar-booking-form .ubicomp--booking-field.person {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .sidebar-booking-form .ubicomp--booking-field.person > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+/* SIDEBAR BOOKING FORM */
+
+/* FIX MOBILE TOGGLE BUTTON DUE TO ELEMENTOR */
+.primary-menu-more-toggle.primary-menu-more-toggle {
+    background: none;
+    color: inherit;
+}
+
+.primary-menu-more-toggle.primary-menu-more-toggle:focus,
+.primary-menu-more-toggle.primary-menu-more-toggle:hover {
+    background: none;
+}
+/* FIX MOBILE TOGGLE BUTTON DUE TO ELEMENTOR */
+
+/* TOP MENU */
+#top-nav {
+    background: #1f1f23;
+    position: relative;
+    z-index: 99;
+    padding: 0 40px;
+}
+
+#top-nav #top-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 3px 0;
+    margin: 0 auto;
+    max-width: 1620px;
+}
+
+#top-nav #top-menu > .menu-item {
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#top-nav #top-menu > .menu-item a:hover {
+    text-decoration: none;
+}
+
+#top-nav #top-menu > .menu-item:not(:first-child) {
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #top-nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #top-nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .site-header.absolute {
+        margin-top: 20px;
+    }
+}
+/* TOP MENU */
+
+/* MOBILE MENU */
+@media only screen and (max-width: 767px) {
+    .site-header .default-navigation .header-menu-wrapper {
+        width: 50px;
+    }
+
+    .site-header .default-navigation {
+        width: 100%;
+    }
+
+    .primary-menu-more-toggle ~ .sub-menu.hidden-links {
+        right: 0;
+        left: auto;
+    }
+}
+/* MOBILE MENU */
+
+/* FIX HEADER BOOKING ENGINE OVERFLOW ON MOBILE */
+@media only screen and (max-width: 767px) {
+    .site-header .header-dropdown-content-wrapper {
+        overflow: auto;
+    }
+
+    .site-header .header-sidebar {
+        max-height: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .site-header .header-sidebar > * {
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+/* FIX HEADER BOOKING ENGINE OVERFLOW ON MOBILE */
+
+/* FIX WHATSAPP BUTTON */
+#ht-ctc-chat img {
+    font-size: 0;
+    display: block;
+}
+/* FIX WHATSAPP BUTTON */
+
+/* REMOVE INPUT FOCUS RING OUTLINE */
+input {
+    outline: none;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+/* REMOVE INPUT FOCUS RING OUTLINE */
