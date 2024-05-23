@@ -25,10 +25,6 @@ const routes = [
         href: "/categories",
         label: "Categories",
     },
-    {
-        href: "/settings",
-        label: "Settings",
-    },
 ];
 
 export const Navigation = () => {
@@ -60,9 +56,7 @@ export const Navigation = () => {
                         {routes.map((route) => (
                             <Button
                                 variant={
-                                    route.href == pathname
-                                        ? "default"
-                                        : "ghost"
+                                    route.href == pathname ? "default" : "ghost"
                                 }
                                 key={route.href}
                                 onClick={() => onClick(route.href)}
