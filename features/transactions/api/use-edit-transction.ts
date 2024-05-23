@@ -3,8 +3,12 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { client } from "@/lib/hono";
 import { toast } from "sonner";
 
-type ResponseType = InferResponseType<(typeof client.api.transactions)[":id"]["$patch"]>;
-type RequestType = InferRequestType<(typeof client.api.transactions)[":id"]["$patch"]>["json"];
+type ResponseType = InferResponseType<
+    (typeof client.api.transactions)[":id"]["$patch"]
+>;
+type RequestType = InferRequestType<
+    (typeof client.api.transactions)[":id"]["$patch"]
+>["json"];
 
 export const useEditTransaction = (id?: string) => {
     const queryClient = useQueryClient();
@@ -19,9 +23,11 @@ export const useEditTransaction = (id?: string) => {
         },
         onSuccess: () => {
             toast.success("Transaction Updated");
-            queryClient.invalidateQueries({ queryKey: ["transaction",{id}] });
+            queryClient.invalidateQueries({
+                queryKey: ["transaction", { id }],
+            });
             queryClient.invalidateQueries({ queryKey: ["transactions"] });
-            // TODO:Invalidate summary
+            queryClient.invalidateQueries({ queryKey: ["summary"] });
         },
         onError: (err) => {
             console.log(err);

@@ -23,7 +23,7 @@ export const useDeleteTransaction = (id?: string) => {
                 queryKey: ["transaction", { id }],
             });
             queryClient.invalidateQueries({ queryKey: ["transactions"] });
-            // TODO:Invalidate summary and transactions
+            queryClient.invalidateQueries({ queryKey: ["summary"] });
         },
         onError: (err) => {
             console.log(err);

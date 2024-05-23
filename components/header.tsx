@@ -3,6 +3,7 @@ import { Navigation } from "@/components/navigation";
 import { ClerkLoaded, ClerkLoading, UserButton } from "@clerk/nextjs";
 import { Loader } from "lucide-react";
 import { WelComeMsg } from "@/components/wellcome-msg";
+import { Filters } from "@/components/filters";
 
 export const Header = () => {
     return (
@@ -20,7 +21,8 @@ export const Header = () => {
                         <UserButton afterSignOutUrl="/" />
                     </ClerkLoaded>
                 </div>
-                <WelComeMsg/>
+                <WelComeMsg />
+                <Filters/>
             </div>
         </header>
     );

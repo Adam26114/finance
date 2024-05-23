@@ -61,7 +61,7 @@ export const Navigation = () => {
                             <Button
                                 variant={
                                     route.href == pathname
-                                        ? "secondary"
+                                        ? "default"
                                         : "ghost"
                                 }
                                 key={route.href}
