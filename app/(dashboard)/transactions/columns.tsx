@@ -127,9 +127,14 @@ export const columns: ColumnDef<ResponseType>[] = [
             const amount = parseFloat(row.getValue("amount"));
 
             return (
-                <Badge variant={amount < 0 ? "destructive" : "primary"}>
-                    {formatCurrency(amount)}
-                </Badge>
+                <div className="w-[180px]">
+                    <Badge
+                        variant={amount < 0 ? "destructive" : "primary"}
+                        className=""
+                    >
+                        {formatCurrency(amount)}
+                    </Badge>
+                </div>
             );
         },
     },

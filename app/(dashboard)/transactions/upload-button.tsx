@@ -18,6 +18,7 @@ export const UploadButton = ({ onUpload }: Props) => {
                     size="sm"
                     className="w-full lg:w-auto"
                     {...getRootProps()}
+                    variant="outline"
                 >
                     <Upload className="size-4 mr-2 " />
                     Import
