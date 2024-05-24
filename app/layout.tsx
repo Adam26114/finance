@@ -6,6 +6,7 @@ import { QueryProviders } from "@/provider/query-provider";
 import { SheetProvider } from "@/provider/sheet-provider";
 import { Toaster } from "@/components/ui/sonner";
 import LoadingProvider from "./_context/LoadingProvider";
+import Head from 'next/head';
 
 const font = Poppins({
     subsets: ["latin"],
@@ -27,12 +28,12 @@ export default function RootLayout({
     return (
         <ClerkProvider>
             <html lang="en">
-                <head>
+                <Head>
                     <meta
                         name="viewport"
-                        content="width=device-width, user-scalable=no"
+                        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
                     />
-                </head>
+                </Head>
                 <body className={font.className}>
                     <QueryProviders>
                         <SheetProvider />
