@@ -65,6 +65,7 @@ export const CategoryForm = ({
                                 <Input
                                     disabled={disabled}
                                     placeholder="e.g Food, Travel, etc."
+                                    className="text-sm"
                                     {...field}
                                 />
                             </FormControl>

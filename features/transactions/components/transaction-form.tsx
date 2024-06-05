@@ -119,6 +119,7 @@ export const TransactionForm = ({
                                     value={field.value}
                                     onChange={field.onChange}
                                     disabled={disabled}
+                                    
                                 />
                             </FormControl>
                             <FormMessage />
@@ -158,6 +159,7 @@ export const TransactionForm = ({
                                     {...field}
                                     disabled={disabled}
                                     placeholder="Add a payee"
+                                    className="text-sm"
                                 />
                             </FormControl>
                             <FormMessage />
@@ -176,6 +178,7 @@ export const TransactionForm = ({
                                     {...field}
                                     disabled={disabled}
                                     placeholder="0.00"
+                                    
                                 />
                             </FormControl>
                             <FormMessage />
@@ -195,6 +198,7 @@ export const TransactionForm = ({
                                     value={field.value ?? ""}
                                     placeholder="Optional notes"
                                     disabled={disabled}
+                                    className="text-sm"
                                 />
                             </FormControl>
                             <FormMessage />
